@@ -33,6 +33,9 @@ jobs:
       - name: Iniciar Terraform
         run: terraform init
 
+      - name: Primeiro check
+        run: terraform fmt -write=true
+        
       - name: Verificar formato dos arquivos
         run: terraform fmt -check
 
