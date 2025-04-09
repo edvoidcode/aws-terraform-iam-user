@@ -45,6 +45,6 @@ jobs:
       - name: Gerar plano
         run: terraform plan
 
-      # ⚠️ Opcional — só se quiser aplicar automaticamente
-      # - name: Aplicar mudanças
-      #   run: terraform apply -auto-approve
+     #⚠️ Opcional — só se quiser aplicar automaticamente
+      - name: Aplicar mudanças
+        run: terraform apply -auto-approve
